@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<!--<meta charset="utf-8" />
+<title>Rekenmachine test</title>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rekenmachine Test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="calculator">
+            <div id="screen">
+            
+            <input type="text" id="previous" placeholder ='0' value=''  disabled><!--first row -->
+                <input type="text" id="result" placeholder ='0' value=''  disabled><!--second  row -->
+            
+                <input type="text" id="operator" placeholder=''  disabled>
+            
+            </div>
+               
+    
+            <div id="keys">
+                <div id="numbers">
+                    <div onclick="addNumber(7)">7</div>
+                    <div onclick="addNumber(8)">8</div>
+                    <div onclick="addNumber(9)">9</div>
+                    <div onclick="addNumber(4)">4</div>
+                    <div onclick="addNumber(5)">5</div>
+                    <div onclick="addNumber(6)">6</div>
+                    <div onclick="addNumber(1)">1</div>
+                    <div onclick="addNumber(2)">2</div>
+                    <div onclick="addNumber(3)">3</div>
+                    <div onclick="addNumber('.')">.</div>
+                    <div onclick="addNumber(0)">0</div>
+                    <div class= "Equals"onclick="onClickEquals('=')">=</div>
+                </div>
+    
+                <div id="operators">
+                    <div class="clear"onclick="onClickCancel('C')">C</div>
+                    <div onclick="onClickOperator('+')">+</div>
+                    <div onClick="onClickOperator('-')">-</div>
+                    <div onclick="onClickOperator ('*')">x</div>
+                    <div onclick="onClickOperator('/')">&#247;</div>
+                </div>
+            </div>
+        </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="script.js" async defer>
+
+        </script>
+    </body>
+</html>
